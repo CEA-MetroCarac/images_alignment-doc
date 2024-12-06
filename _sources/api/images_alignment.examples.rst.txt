@@ -1,0 +1,22 @@
+images\_alignment.examples package
+==================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   images_alignment.examples.example
+   images_alignment.examples.example_appli
+   images_alignment.examples.utils
+
+Module contents
+---------------
+
+.. automodule:: images_alignment.examples
+   :members:
+   :private-members:
+   :no-undoc-members:
+   :show-inheritance:
+   :ignore-module-all:

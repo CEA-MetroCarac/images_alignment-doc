@@ -1,0 +1,589 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>images_alignment.alignment module &mdash; Image Alignment 2024.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+
+  
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+      <script src="../_static/doctools.js"></script>
+      <script src="../_static/sphinx_highlight.js"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="images_alignment.utils module" href="images_alignment.utils.html" />
+    <link rel="prev" title="images_alignment.examples.utils module" href="images_alignment.examples.utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Image Alignment
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">GUI Mode</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/visualization.html">Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/parameters.html">Files selection / Parameters settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/registration.html">Registration algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/processing.html">Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/application.html">Workflow</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripting Mode</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/scripting.html">Scripting</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">images_alignment</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="images_alignment.html">images_alignment package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="images_alignment.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="images_alignment.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">images_alignment.alignment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="images_alignment.utils.html">images_alignment.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="images_alignment.html#module-images_alignment">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Image Alignment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">images_alignment</a></li>
+          <li class="breadcrumb-item"><a href="images_alignment.html">images_alignment package</a></li>
+      <li class="breadcrumb-item active">images_alignment.alignment module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/images_alignment.alignment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-images_alignment.alignment">
+<span id="images-alignment-alignment-module"></span><h1>images_alignment.alignment module<a class="headerlink" href="#module-images_alignment.alignment" title="Permalink to this heading"></a></h1>
+<p>Class dedicated to images alignment</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">images_alignment.alignment.</span></span><span class="sig-name descname"><span class="pre">ImagesAlign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fnames_fixed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fnames_moving</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rois</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_inversions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terminal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class dedicated to images alignment</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul>
+<li><p><strong>fnames_fixed, fnames_moving</strong> (<em>iterables of str, optional</em>) – Images pathnames related to fixed and moving images resp. to handle</p></li>
+<li><p><strong>rois</strong> (<em>list of 2 iterables, optional</em>) –</p>
+<dl class="simple">
+<dt>rois (regions of interest) attached to the fixed and moving images, each defining as:</dt><dd><p>[xmin, xmax, ymin, ymax]</p>
+</dd>
+</dl>
+</li>
+<li><p><strong>thresholds</strong> (<em>iterable of 2 floats, optional</em>) – Thresholds used to binarize the images. Default values are [0.5, 0.5]</p></li>
+<li><p><strong>bin_inversions</strong> (<em>iterable of 2 bools, optional</em>) – Activation keywords to reverse the image binarization</p></li>
+<li><p><strong>terminal</strong> (<em>object, optional</em>) – object with an associated write() class function to write messages</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.fnames_tot">
+<span class="sig-name descname"><span class="pre">fnames_tot</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.fnames_tot" title="Permalink to this definition"></a></dt>
+<dd><p>Images pathnames related to fixed and moving images resp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.fnames">
+<span class="sig-name descname"><span class="pre">fnames</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.fnames" title="Permalink to this definition"></a></dt>
+<dd><p>List of the current fixed and moving images filenames</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">imgs,</span> <span class="pre">imgs_bin</span></span></dt>
+<dd><p>Arrays related to the current fixed and moving images, in their raw or binarized states
+resp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 arrays</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.dtype">
+<span class="sig-name descname"><span class="pre">dtype</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.dtype" title="Permalink to this definition"></a></dt>
+<dd><p>Datatypes associated to the current fixed and moving images</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 dtype</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.rois">
+<span class="sig-name descname"><span class="pre">rois</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.rois" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>rois (regions of interest) attached to the fixed and moving images, each defining as:</dt><dd><p>[xmin, xmax, ymin, ymax]</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 iterables, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.thresholds">
+<span class="sig-name descname"><span class="pre">thresholds</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.thresholds" title="Permalink to this definition"></a></dt>
+<dd><p>Thresholds used to binarize the images. Default values are [0.5, 0.5]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable of 2 floats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.angles">
+<span class="sig-name descname"><span class="pre">angles</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.angles" title="Permalink to this definition"></a></dt>
+<dd><p>angles to apply resp to the fixed and moving images before registration.
+(each angle to be chosen among [0, 90, 180, 270])</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.bin_inversions">
+<span class="sig-name descname"><span class="pre">bin_inversions</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.bin_inversions" title="Permalink to this definition"></a></dt>
+<dd><p>Activation keywords to reverse the image binarization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable of 2 bools</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.terminal">
+<span class="sig-name descname"><span class="pre">terminal</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.terminal" title="Permalink to this definition"></a></dt>
+<dd><p>object with an associated write() class function to write messages</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.registration_model">
+<span class="sig-name descname"><span class="pre">registration_model</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.registration_model" title="Permalink to this definition"></a></dt>
+<dd><p>Registration model to be considered among [‘StackReg’, ‘SIFT’, ‘SIFT + StackReg’,
+‘User-Driven’].
+Default is ‘StackReg’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.points">
+<span class="sig-name descname"><span class="pre">points</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.points" title="Permalink to this definition"></a></dt>
+<dd><p>Coordinates of the matching points between the fixed and moving images (filled by all
+registration models except ‘StackReg’).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 list of floats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.max_size_reg">
+<span class="sig-name descname"><span class="pre">max_size_reg</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.max_size_reg" title="Permalink to this definition"></a></dt>
+<dd><p>Maximum image size considered when performing the registration.
+Default value is 512.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.inv_reg">
+<span class="sig-name descname"><span class="pre">inv_reg</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.inv_reg" title="Permalink to this definition"></a></dt>
+<dd><p>Activation key to reverse ‘fixed’ and ‘moving’ images during the registration calculation.
+Default is False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.tmat">
+<span class="sig-name descname"><span class="pre">tmat</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.tmat" title="Permalink to this definition"></a></dt>
+<dd><p>Affine transformation matrice returned by the registration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray((3, 3))</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">img_reg,</span> <span class="pre">img_reg_bin</span></span></dt>
+<dd><p>Arrays issued from the moving registrated image in its raw or binarized state resp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>arrays</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.mask">
+<span class="sig-name descname"><span class="pre">mask</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.mask" title="Permalink to this definition"></a></dt>
+<dd><p>Array (dtype=bool) associated with the overlapping area issued from the registration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.fixed_reg">
+<span class="sig-name descname"><span class="pre">fixed_reg</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.fixed_reg" title="Permalink to this definition"></a></dt>
+<dd><p>Activation key to perform the worflow calculation with a fixed ‘tmat’.
+Default is False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.results">
+<span class="sig-name descname"><span class="pre">results</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.results" title="Permalink to this definition"></a></dt>
+<dd><p>Dictionary that contains the workflow score and tmat of each alignment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.dirname_res">
+<span class="sig-name descname"><span class="pre">dirname_res</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.dirname_res" title="Permalink to this definition"></a></dt>
+<dd><p>Filenames associated with the ‘fixed_images’ and ‘moving_images’ resulting images
+sub-folders</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.binarized">
+<span class="sig-name descname"><span class="pre">binarized</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.binarized" title="Permalink to this definition"></a></dt>
+<dd><p>Activation key to display images according to their binarized values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.resolution">
+<span class="sig-name descname"><span class="pre">resolution</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.resolution" title="Permalink to this definition"></a></dt>
+<dd><p>relative resolution parameter (between [0., 1.]).
+Default value is 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.min_img_res">
+<span class="sig-name descname"><span class="pre">min_img_res</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.min_img_res" title="Permalink to this definition"></a></dt>
+<dd><p>Minimum image resolution associated to ‘resolution’=0.
+Default value is 256.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.rfactors_plotting">
+<span class="sig-name descname"><span class="pre">rfactors_plotting</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.rfactors_plotting" title="Permalink to this definition"></a></dt>
+<dd><p>Rescaling factors used for images displaying (each one between [0., 1.]).
+Default values are [1., 1.].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2 floats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.juxt_alignment">
+<span class="sig-name descname"><span class="pre">juxt_alignment</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.juxt_alignment" title="Permalink to this definition"></a></dt>
+<dd><p>Mode of images juxtapostion (‘horizontal’ or ‘vertical’).
+Default value is ‘horizontal’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.apply_mask">
+<span class="sig-name descname"><span class="pre">apply_mask</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.apply_mask" title="Permalink to this definition"></a></dt>
+<dd><p>Activation keyword to limit the combined image to the overlapping area.
+Default is True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.ax">
+<span class="sig-name descname"><span class="pre">ax</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.ax" title="Permalink to this definition"></a></dt>
+<dd><p>Axes associated to the image alignment application to display the different images.
+Default is a 4 horizontal axes to respectively display the ‘fixed’ and ‘moving’ image,
+the ‘juxtaposed image’ and the ‘combined image’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>matplotlib.axes.Axes object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.reinit">
+<span class="sig-name descname"><span class="pre">reinit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.reinit" title="Permalink to this definition"></a></dt>
+<dd><p>Reinitialize ‘points’, ‘img_reg’, ‘img_reg_bin’ and ‘results’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.load_files">
+<span class="sig-name descname"><span class="pre">load_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fnames</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.load_files" title="Permalink to this definition"></a></dt>
+<dd><p>Load the k-th image files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.load_image">
+<span class="sig-name descname"><span class="pre">load_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.load_image" title="Permalink to this definition"></a></dt>
+<dd><p>Load the k-th image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.get_shapes">
+<span class="sig-name descname"><span class="pre">get_shapes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.get_shapes" title="Permalink to this definition"></a></dt>
+<dd><p>Return the shapes related to the cropped (or not cropped) images</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.update_rfactors_plotting">
+<span class="sig-name descname"><span class="pre">update_rfactors_plotting</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.update_rfactors_plotting" title="Permalink to this definition"></a></dt>
+<dd><p>Update the ‘rfactors_plotting’ wrt ‘resolution’ and ‘imgs’ sizes</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.binarization_k">
+<span class="sig-name descname"><span class="pre">binarization_k</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.binarization_k" title="Permalink to this definition"></a></dt>
+<dd><p>Binarize the k-th image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.binarization">
+<span class="sig-name descname"><span class="pre">binarization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.binarization" title="Permalink to this definition"></a></dt>
+<dd><p>Binarize the images</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.crop_and_resize">
+<span class="sig-name descname"><span class="pre">crop_and_resize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.crop_and_resize" title="Permalink to this definition"></a></dt>
+<dd><p>Crop and Resize the images</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.registration">
+<span class="sig-name descname"><span class="pre">registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registration_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.registration" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the transformation matrix ‘tmat’ and apply it</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.registration_calc">
+<span class="sig-name descname"><span class="pre">registration_calc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registration_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.registration_calc" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the transformation matrix ‘tmat’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.registration_apply">
+<span class="sig-name descname"><span class="pre">registration_apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.registration_apply" title="Permalink to this definition"></a></dt>
+<dd><p>Apply the transformation matrix ‘tmat’ to the moving image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.set_dirname_res">
+<span class="sig-name descname"><span class="pre">set_dirname_res</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dirname_res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.set_dirname_res" title="Permalink to this definition"></a></dt>
+<dd><p>Set dirname results ‘dirname_res’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.apply_to_all">
+<span class="sig-name descname"><span class="pre">apply_to_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dirname_res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.apply_to_all" title="Permalink to this definition"></a></dt>
+<dd><p>Apply the transformations to a set of images</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.save_params">
+<span class="sig-name descname"><span class="pre">save_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname_json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.save_params" title="Permalink to this definition"></a></dt>
+<dd><p>Save parameters in a .json file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.reload_params">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reload_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname_json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.reload_params" title="Permalink to this definition"></a></dt>
+<dd><p>Reload parameters from a .json file and
+Return an ImagesAlign() object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.plot_all">
+<span class="sig-name descname"><span class="pre">plot_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.plot_all" title="Permalink to this definition"></a></dt>
+<dd><p>Plot all the axis</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.plot_k">
+<span class="sig-name descname"><span class="pre">plot_k</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.plot_k" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the k-th axis</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.plot_fixed_or_moving_image">
+<span class="sig-name descname"><span class="pre">plot_fixed_or_moving_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.plot_fixed_or_moving_image" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the fixed (k=0) or the moving (k=1) image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.plot_juxtaposed_images">
+<span class="sig-name descname"><span class="pre">plot_juxtaposed_images</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.plot_juxtaposed_images" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the juxtaposed images</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.plot_combined_images">
+<span class="sig-name descname"><span class="pre">plot_combined_images</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.plot_combined_images" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the combined images</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="images_alignment.examples.utils.html" class="btn btn-neutral float-left" title="images_alignment.examples.utils module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="images_alignment.utils.html" class="btn btn-neutral float-right" title="images_alignment.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, SMCP-PFNC.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

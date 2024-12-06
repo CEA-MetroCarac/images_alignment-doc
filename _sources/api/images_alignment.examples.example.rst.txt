@@ -1,0 +1,9 @@
+images\_alignment.examples.example module
+=========================================
+
+.. automodule:: images_alignment.examples.example
+   :members:
+   :private-members:
+   :no-undoc-members:
+   :show-inheritance:
+   :ignore-module-all:
