@@ -93,13 +93,13 @@
 <p>This requires the user to have pre-defined a <strong>“results”</strong> folder to store the alignment results. This <strong>“results”</strong> folder will contain two sub-folders: <strong>fixed_images</strong> and <strong>moving_images</strong>, which will contain the processed images.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since the user can choose to invert the “Fixed/Moving” roles using the <code class="docutils literal notranslate"><span class="pre">INV</span></code> button, each <strong>Fixed</strong> (corresponding to a moving image in the <code class="docutils literal notranslate"><span class="pre">INV</span></code> mode) is saved with an extension related to its processing order in the workflow.</p>
+<p>In the case of a 1-to-N image processing, the <code class="docutils literal notranslate"><span class="pre">INV</span></code> mode can not be activated.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>To facilitate the viewing of the realigned images after processing, the images displayed in the visualization windows are those located in the <strong>“results”</strong> directories. Changing the images in the processed set can be done using the image selection frames. Consequently, the displayed images are no longer the original images.</p>
-<p>Any new registration will then apply to these processed images and potentially overwrite them.</p>
-<p>To reprocess the original images, it is necessary to uncheck the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">results</span></code> checkbox.</p>
+<p>To facilitate the viewing of the realigned images after processing, the images displayed in the visualization windows are those located in the <strong>“results”</strong> directories.</p>
+<p><strong>Consequently</strong>, any new alignment will then be performed from these already processed images, with the risk to overwrite them when saving.</p>
+<p><strong>To go back to the original images, uncheck the ``Show results`` checkbox.</strong></p>
 </div>
 </section>
 

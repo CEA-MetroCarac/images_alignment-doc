@@ -88,6 +88,37 @@
              
   <section id="welcome-to-the-image-alignment-documentation">
 <h1>Welcome to the Image_Alignment documentation !<a class="headerlink" href="#welcome-to-the-image-alignment-documentation" title="Permalink to this heading"></a></h1>
+<p><strong>Images_Alignment</strong> is an application dedicated to ease the images alignment using affine transformation matrices calculated either from the <a class="reference external" href="https://github.com/glichtner/pystackreg)">pyStackReg</a> or <a class="reference external" href="https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_sift.html">SIFT</a> algorithm, a combined approach, or from a user driven approach (specifying manually the matching points).</p>
+<p>Once the parameters have been set, they can be automatically applied to a set of images as part of a workflow.</p>
+<p><strong>This documentation mainly focuses on using the application in GUI mode.</strong></p>
+<p>For a <strong>scripting mode usage</strong>, please refer to the final section of this documentation.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>Assuming you have a python environment which is activated in a terminal, the application can be installed thanks the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/CEA-MetroCarac/images_alignment.git</span>
+<span class="pre">`</span></code></p>
+<p>Once installed, the application can be launched directly from a terminal (with the previous python environment activated), by:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">images_alignment</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="tests-execution">
+<h2>Tests execution<a class="headerlink" href="#tests-execution" title="Permalink to this heading"></a></h2>
+<p>For developers, the full package including examples and tests can be installed via:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/CEA-MetroCarac/images_alignment.git</span>
+<span class="pre">cd</span> <span class="pre">images_alignment</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span>
+<span class="pre">`</span></code></p>
+<p>The tests can be executed via the following commands:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pytest</span>
+<span class="pre">pytest</span> <span class="pre">tests</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="image-alignment-documentation">
+<h2>Image_Alignment documentation<a class="headerlink" href="#image-alignment-documentation" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">GUI Mode</span></p>
 <ul>
@@ -114,6 +145,7 @@
 </li>
 </ul>
 </div>
+</section>
 </section>
 
 

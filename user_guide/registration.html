@@ -98,11 +98,11 @@
 <p>4 registration methods are offered within the application: <strong>StackReg</strong>, <strong>SIFT</strong>, a combined approach (<strong>SIFT + StackReg</strong>), and a <strong>User-driven</strong> one</p>
 <section id="stackreg">
 <h2>StackReg<a class="headerlink" href="#stackreg" title="Permalink to this heading"></a></h2>
-<p>This algorithm is based on a minimization processing based on <strong>cross-correlation</strong> of binarized images (of identical size). Binarization and image resizing are handled automatically within the code. Binarization is performed to achieve, as closely as possible, a 50-50 distribution of True-False (or 0-1) values for the selected regions (either ROIs or entire images). In some cases, users have to adjust this threshold in the <code class="docutils literal notranslate"><span class="pre">Options</span></code> tab to better highlight features essential for accurate alignment.</p>
+<p>This algorithm is based on a minimization processing based on <strong>cross-correlation</strong> of binarized images of similar size. Binarization and image resizing are handled automatically within the code. Binarization is performed to achieve, by default and as closely as possible, a 50-50 distribution of True-False (or 0-1) values for the selected regions (either ROIs or entire images). In some cases, users have to adjust this threshold in the <code class="docutils literal notranslate"><span class="pre">Options</span></code> tab to better highlight features essential for accurate alignment.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/stackreg_threshold.png"><img alt="../_images/stackreg_threshold.png" src="../_images/stackreg_threshold.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Adjustment of the Threshold related to the binarization in the <code class="docutils literal notranslate"><span class="pre">Options</span></code> tab.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Illustration of adjusting the <code class="docutils literal notranslate"><span class="pre">Threshold</span></code> in the <code class="docutils literal notranslate"><span class="pre">Options</span></code> tab to reveal features.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>It is important to note that <code class="docutils literal notranslate"><span class="pre">StackReg</span></code> relies on a gradient descent method to minimize misalignment. Therefore, it requires the images to already have significant overlap in their features to function effectively.</p>
@@ -126,7 +126,7 @@ Due to the random sampling process used to match features between images, consec
 </section>
 <section id="sift-stackreg">
 <h2>SIFT + StackReg<a class="headerlink" href="#sift-stackreg" title="Permalink to this heading"></a></h2>
-<p>This combined approach leverages the strengths of both methods. <code class="docutils literal notranslate"><span class="pre">SIFT</span></code> first performs a coarse alignment, bringing potentially highly misaligned images closer together. Then, <code class="docutils literal notranslate"><span class="pre">StackReg</span></code> refines this alignment to achieve possibily a higher level of precision.</p>
+<p>This combined approach leverages the strengths of both methods. <code class="docutils literal notranslate"><span class="pre">SIFT</span></code> first performs a primary alignment, bringing potentially highly misaligned images closer together. Then, <code class="docutils literal notranslate"><span class="pre">StackReg</span></code> refines this alignment to achieve possibily a higher level of precision.</p>
 </section>
 <section id="user-driven">
 <h2>User-Driven<a class="headerlink" href="#user-driven" title="Permalink to this heading"></a></h2>

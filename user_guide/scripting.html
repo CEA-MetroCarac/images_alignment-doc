@@ -89,11 +89,10 @@
              
   <section id="scripting">
 <h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading"></a></h1>
-<p>Every operation performed through the GUI can also be executed in scripting mode.</p>
-<p>Below is a brief illustration of image alignment by adjusting a few parameters:</p>
+<p>Every operation performed through the GUI can also be executed in scripting mode. Here is a brief illustration:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">images_alignment</span> <span class="kn">import</span> <span class="n">ImagesAlign</span>
 
-<span class="n">imgalign</span> <span class="o">=</span> <span class="n">ImagesAlign</span><span class="p">(</span><span class="n">fixed_images</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img1.tif&#39;</span><span class="p">],</span> <span class="n">fnames_moving</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img2_1.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;img2_2.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;img2_3.tif&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span>
+<span class="n">imgalign</span> <span class="o">=</span> <span class="n">ImagesAlign</span><span class="p">(</span><span class="n">fixed_images</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img1.tif&#39;</span><span class="p">],</span> <span class="n">fnames_moving</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img2_1.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;img2_2.tif&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span>
 
 <span class="n">imgalign</span><span class="o">.</span><span class="n">angles</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">]</span>
 <span class="n">imgalign</span><span class="o">.</span><span class="n">thresholds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.50</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">]</span>
