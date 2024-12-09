@@ -8,7 +8,6 @@ Subpackages
    :maxdepth: 4
 
    images_alignment.application
-   images_alignment.examples
 
 Submodules
 ----------
