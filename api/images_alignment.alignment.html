@@ -281,7 +281,7 @@ Default is False.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.tmat">
 <span class="sig-name descname"><span class="pre">tmat</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.tmat" title="Permalink to this definition"></a></dt>
-<dd><p>Affine transformation matrice returned by the registration.</p>
+<dd><p>Transformation matrice returned by the registration.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>numpy.ndarray((3, 3))</p>
@@ -307,6 +307,18 @@ Default is False.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="images_alignment.alignment.ImagesAlign.tmat_options">
+<span class="sig-name descname"><span class="pre">tmat_options</span></span><a class="headerlink" href="#images_alignment.alignment.ImagesAlign.tmat_options" title="Permalink to this definition"></a></dt>
+<dd><p>Dictionnary composed of options to build the ‘tmat’ transformation matrice (translation,
+rotation, scaling, shearing)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dictionary of bool</p>
 </dd>
 </dl>
 </dd></dl>
