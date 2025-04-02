@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="images_alignment.application.utils module" href="images_alignment.application.utils.html" />
+    <link rel="next" title="images_alignment.application.view module" href="images_alignment.application.view.html" />
     <link rel="prev" title="images_alignment.application.app module" href="images_alignment.application.app.html" /> 
 </head>
 
@@ -101,202 +101,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-images_alignment.application.callbacks">
-<span id="images-alignment-application-callbacks-module"></span><h1>images_alignment.application.callbacks module<a class="headerlink" href="#module-images_alignment.application.callbacks" title="Permalink to this heading"></a></h1>
-<p>Class Callbacks attached to the application</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">images_alignment.application.callbacks.</span></span><span class="sig-name descname"><span class="pre">Callbacks</span></span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Class Callbacks attached to the application</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.select_axis">
-<span class="sig-name descname"><span class="pre">select_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.select_axis" title="Permalink to this definition"></a></dt>
-<dd><p>Select the axis to be displayed in ‘fig1’</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.spine_axis">
-<span class="sig-name descname"><span class="pre">spine_axis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.spine_axis" title="Permalink to this definition"></a></dt>
-<dd><p>Spine the selected axis</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.init_rectangle">
-<span class="sig-name descname"><span class="pre">init_rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.init_rectangle" title="Permalink to this definition"></a></dt>
-<dd><p>Initialize rectangle</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.add_or_remove_points">
-<span class="sig-name descname"><span class="pre">add_or_remove_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.add_or_remove_points" title="Permalink to this definition"></a></dt>
-<dd><p>Add or Remove a point</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.init_or_remove_line">
-<span class="sig-name descname"><span class="pre">init_or_remove_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.init_or_remove_line" title="Permalink to this definition"></a></dt>
-<dd><p>Initialize or Remove a line</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.remove_moving_line">
-<span class="sig-name descname"><span class="pre">remove_moving_line</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.remove_moving_line" title="Permalink to this definition"></a></dt>
-<dd><p>Remove the moving line</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.draw_line">
-<span class="sig-name descname"><span class="pre">draw_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.draw_line" title="Permalink to this definition"></a></dt>
-<dd><p>Draw the line in ‘fig1’ (with ‘User-Driven’ mode activated)</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.draw_rectangle">
-<span class="sig-name descname"><span class="pre">draw_rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_roi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.draw_rectangle" title="Permalink to this definition"></a></dt>
-<dd><p>Draw a rectangle</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.set_roi">
-<span class="sig-name descname"><span class="pre">set_roi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.set_roi" title="Permalink to this definition"></a></dt>
-<dd><p>Set ROI from the view to the model</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.zoom">
-<span class="sig-name descname"><span class="pre">zoom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.zoom" title="Permalink to this definition"></a></dt>
-<dd><p>Zoom/Unzoom the ‘fig1’</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update" title="Permalink to this definition"></a></dt>
-<dd><p>Update the view parameters from the model and the plots</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_file">
-<span class="sig-name descname"><span class="pre">update_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_file" title="Permalink to this definition"></a></dt>
-<dd><p>Update the k-th image from the fileselector and its related one</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_plots">
-<span class="sig-name descname"><span class="pre">update_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_plots" title="Permalink to this definition"></a></dt>
-<dd><p>Update the plots</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.clear_plots">
-<span class="sig-name descname"><span class="pre">clear_plots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.clear_plots" title="Permalink to this definition"></a></dt>
-<dd><p>Clear points</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_fig1">
-<span class="sig-name descname"><span class="pre">update_fig1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_fig1" title="Permalink to this definition"></a></dt>
-<dd><p>Update the fig1</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_rois">
-<span class="sig-name descname"><span class="pre">update_rois</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_rois" title="Permalink to this definition"></a></dt>
-<dd><p>Update ROIs of the k-th image from the Tkinter.Entry</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_threshold">
-<span class="sig-name descname"><span class="pre">update_threshold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_threshold" title="Permalink to this definition"></a></dt>
-<dd><p>Update the threshold value associated with the k-th image</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_registration_model">
-<span class="sig-name descname"><span class="pre">update_registration_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_registration_model" title="Permalink to this definition"></a></dt>
-<dd><p>Update the threshold value</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_tmat_options">
-<span class="sig-name descname"><span class="pre">update_tmat_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_tmat_options" title="Permalink to this definition"></a></dt>
-<dd><p>Update the tmat_options boolean values related to the ‘key’</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_inv_reg">
-<span class="sig-name descname"><span class="pre">update_inv_reg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_inv_reg" title="Permalink to this definition"></a></dt>
-<dd><p>Update the ‘inv_reg’ value</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_fixed_reg">
-<span class="sig-name descname"><span class="pre">update_fixed_reg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_fixed_reg" title="Permalink to this definition"></a></dt>
-<dd><p>Update the ‘fixed_reg’ value</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_juxt_alignment">
-<span class="sig-name descname"><span class="pre">update_juxt_alignment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_juxt_alignment" title="Permalink to this definition"></a></dt>
-<dd><p>Update the ‘juxt_alignment’ value</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_apply_mask">
-<span class="sig-name descname"><span class="pre">update_apply_mask</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_apply_mask" title="Permalink to this definition"></a></dt>
-<dd><p>Update the ‘apply_mask’ value</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_angles">
-<span class="sig-name descname"><span class="pre">update_angles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_angles" title="Permalink to this definition"></a></dt>
-<dd><p>Update the angle of k-th image</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.update_resolution">
-<span class="sig-name descname"><span class="pre">update_resolution</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.update_resolution" title="Permalink to this definition"></a></dt>
-<dd><p>Update the ‘resolution’ and ‘rfactors_plotting’ values</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.bin_inversion">
-<span class="sig-name descname"><span class="pre">bin_inversion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.bin_inversion" title="Permalink to this definition"></a></dt>
-<dd><p>Invert the binarized k-th image</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.registration">
-<span class="sig-name descname"><span class="pre">registration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.registration" title="Permalink to this definition"></a></dt>
-<dd><p>Apply registration</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.save_images">
-<span class="sig-name descname"><span class="pre">save_images</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.save_images" title="Permalink to this definition"></a></dt>
-<dd><p>Save the fixed and moving images in their final states</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.reload_params">
-<span class="sig-name descname"><span class="pre">reload_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.reload_params" title="Permalink to this definition"></a></dt>
-<dd><p>Reload parameters</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.apply_to_all">
-<span class="sig-name descname"><span class="pre">apply_to_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dirname_res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.apply_to_all" title="Permalink to this definition"></a></dt>
-<dd><p>Apply the alignment processing to all the images</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="images_alignment.application.callbacks.Callbacks.plot_results">
-<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#images_alignment.application.callbacks.Callbacks.plot_results" title="Permalink to this definition"></a></dt>
-<dd><p>Display the figures related to the ‘dirname_res’</p>
-</dd></dl>
-
-</dd></dl>
-
+  <section id="images-alignment-application-callbacks-module">
+<h1>images_alignment.application.callbacks module<a class="headerlink" href="#images-alignment-application-callbacks-module" title="Permalink to this heading"></a></h1>
 </section>
 
 
@@ -304,7 +110,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="images_alignment.application.app.html" class="btn btn-neutral float-left" title="images_alignment.application.app module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="images_alignment.application.utils.html" class="btn btn-neutral float-right" title="images_alignment.application.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="images_alignment.application.view.html" class="btn btn-neutral float-right" title="images_alignment.application.view module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

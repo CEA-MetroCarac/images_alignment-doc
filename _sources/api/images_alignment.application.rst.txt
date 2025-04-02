@@ -9,7 +9,6 @@ Submodules
 
    images_alignment.application.app
    images_alignment.application.callbacks
-   images_alignment.application.utils
    images_alignment.application.view
 
 Module contents
